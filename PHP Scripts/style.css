@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*
+{
+box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+
+.header-bar
+{
+    background: green; 
+    width: 100vw;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    position: absolute;
+    min-width: 100%;
+}
+
+.logo-text
+{
+    font-family: 'Dancing Script';
+    fill: none;
+    animation: opac;
+    stroke: #fff;
+    stroke-width: .01em;
+    animation: strk 25s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.add-product-form
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.add-product-form form
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-product-form label
+{
+    color: #FFF;
+    text-align: left;
+    width: 100%;
+    margin: 10px 0 5px 0;
+}
+
+.add-product-form input, .add-product-form select
+{
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+    padding-left: 5px;
+    color: #666;
+}
+
+.add-product-form button
+{
+    position: absolute;
+    bottom: -45;
+    right: 0;
+    width: 45px;
+    height: 35px;
+}
+
+select
+{
+    color: #FFF;
+}
+
+.data-row
+{
+    color: #FFF;
+    margin: 15px 0;
+    padding: 30px;
+    position: relative;
+}
+
+@keyframes strk {
+
+    20%, 100%
+    {
+        stroke-dasharray: 500;
+    }
+    0%
+    {
+        stroke-dasharray: 27;
+        stroke-dashoffset: 27;
+        fill: none;
+    }
+}
+
