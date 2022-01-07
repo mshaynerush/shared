@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="ajax_form" enctype="multipart/form-data">
+        <label for="auction-id">Auction ID</label><br>
+        <input type="text" name="auction-id" id="auctionID" class="user-input"><br><br>
+        <label for="item-loc">Item Location:</label><br>
+        <input type="text" name="item-loc" id="itemLoc" class="user-input"><br><br>
+        <label for="item-id">Item Number</label><br>
+        <input type="text" name="item-id" id="itemID" class="user-input"><br><br>
+        <button type="submit" class="item-submit hidden" id="itemSubmit">Submit</button>
+    </form>
+
+   
+    <div class="item-to-upload" id="itemToUpload">
+        <div class="item-row">
+            <span class="item-to-load-header">Item Number</span>
+            <span class="item-to-load-header">Item Location</span>
+        </div>
+
+    </div>
+    <button class="upload-button" id="formUpload">Upload</button>
+
+<script>
+
+
+
+</script>
+</body>
+</html>
+
